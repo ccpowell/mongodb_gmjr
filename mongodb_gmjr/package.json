@@ -1,0 +1,20 @@
+{
+    "name": "mongodb_gmjr",
+    "version": "0.0.1",
+    "homepage": "",
+    "author": "",
+    "description": "",
+    "contributors": [
+        {
+            "name": "",
+            "email": ""
+        }
+    ],
+    "private": true,
+    "dependencies": {
+        "mongodb": "*",
+        "q": "*",
+        "underscore": "*",
+        "mongoose": "*"
+    }
+}

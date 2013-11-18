@@ -1,0 +1,38 @@
+# Version string (32 chars max)
+version <%= version %>
+
+# Input file (currently csv only)
+input <%= input_path %>
+
+# Output file
+output <%= output_path %>
+
+#Available FLASH size (2Mb - 2 8kb sectors)
+flash 0x1FA000
+
+# Data Block Type (linear1 or box1)
+dbtype box1
+
+# Data Block Info (min lat, max lat, min lon, max lon)
+# use no spaces between numbers!!
+# all zeros means no filtering on the lat/lon
+# longitude is measured west to east
+dbinfo <%= dbinfo %>
+
+# ordering as output (fifo or closest, fifo is only good for linear1 grid type)
+order <%= order %>
+
+# Filter Info (max difficulty [*10], max terrain [*10], min size, time since placed [days], time since found [days])
+# use no spaces between numbers!!  0 for time since placed and time since found is ignore value.
+# max difficulty and max terrain must be evenly divisible by 5 (allowed values 10,15,20,25,30,35,40,45,50)
+finfo <%= finfo %>
+
+# Minimum number caches per grid box (optional)
+pergrid 10
+
+#ccode (enter a country code, only countries with this code will be accepted
+ccode -1
+
+#maximum difficulty rating for micro-caches, multipled by 10, so a 1 maximum would be 10, 2 would be 20, etc.
+#this is an optional field, enter 50 to be ignored
+micro 20
